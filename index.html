@@ -55,9 +55,15 @@
     <audio id="mysong">
         <source src="assets/videoplayback.mp3" type="audio/mp3">
     </audio>
-    
-    <script>
 
+    <div id="particles-js"></div>
+    <div id="center-text">
+        <h1>The Ultimate Client</h1>
+        <div id="release-date">Release Date: 29/11/2023</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
         var mysong = document.getElementById("mysong");
         var icon = document.getElementById("icon");
         
@@ -70,15 +76,7 @@
                 icon.src = "assets/play.png";
             }
         }
-
-    <div id="particles-js"></div>
-    <div id="center-text">
-        <h1>The Ultimate Client</h1>
-        <div id="release-date">Release Date: 29/11/2023</div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
+        
         particlesJS('particles-js', {
             particles: {
                 number: {
